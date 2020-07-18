@@ -10,7 +10,7 @@ salario = input("Ingrese su salario: ")
 anio = int(anioNacimiento)
 mes = int(mesNacimiento)
 dia = int(diaNacimiento)
-nroSalarios = int(salario)/877803
+nroSalarios = int(salario)//877803
 
 def nombreMes(i):
 	switcher = {
@@ -28,8 +28,14 @@ def nombreMes(i):
 		12: 'Diciembre',			
 	}
 	return switcher.get(i, "Invalido");	
-	
+
 print("Bienvenido",name);
 print("Usted tiene",2020-anio,"años",7-mes,"meses y",15-dia,"días");
 print("Nacio en el mes de:",nombreMes(mes));
 print("La cantidad de Salarios minimos es:", nroSalarios);
+print("\n");
+print("Nro", "\t", "Cantidad");
+
+for i in range(1, nroSalarios+1):
+	print(i, "\t", 877803 * i)
+	
