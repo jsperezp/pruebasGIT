@@ -5,12 +5,12 @@ name = input("Ingrese su nombre: ")
 anioNacimiento = input("Ingrese su año de nacimiento: ")
 mesNacimiento = input("Ingrese su mes de nacimiento: ")
 diaNacimiento = input("Ingrese su día de nacimiento: ")
+salario = input("Ingrese su salario: ")
 
 anio = int(anioNacimiento)
 mes = int(mesNacimiento)
 dia = int(diaNacimiento)
-
-monthName = '';
+nroSalarios = int(salario)/877803
 
 def nombreMes(i):
 	switcher = {
@@ -32,3 +32,4 @@ def nombreMes(i):
 print("Bienvenido",name);
 print("Usted tiene",2020-anio,"años",7-mes,"meses y",15-dia,"días");
 print("Nacio en el mes de:",nombreMes(mes));
+print("La cantidad de Salarios minimos es:", nroSalarios);
